@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YPb-hp-QjR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="crE-6u-v30">
+            <objects>
+                <collectionViewController id="J0l-Kj-zMV" customClass="ViewController" customModule="EulerityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="kWS-HF-Mfe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oCh-tS-XcX">
+                            <size key="itemSize" width="350" height="269"/>
+                            <size key="estimatedItemSize" width="350" height="300"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Image_id" id="Cni-Sm-oS2" customClass="ImageCell" customModule="EulerityApp" customModuleProvider="target">
+                                <rect key="frame" x="29" y="10" width="356" height="261"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hLH-QS-Olb">
+                                    <rect key="frame" x="0.0" y="0.0" width="356" height="261"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aSg-9Q-TZE">
+                                            <rect key="frame" x="8" y="8" width="334" height="242"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="customSize" width="356" height="261"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="imageView" destination="aSg-9Q-TZE" id="4iC-IN-13P"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="J0l-Kj-zMV" id="9Cz-j7-fem"/>
+                            <outlet property="delegate" destination="J0l-Kj-zMV" id="RmF-t8-VHC"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="dzA-qc-U6r"/>
+                    <connections>
+                        <segue destination="gn9-R7-eiC" kind="show" identifier="editVC" id="6LK-ew-leW"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ned-an-cp3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385.5072463768117" y="48.883928571428569"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="7Ts-cM-a7j">
+            <objects>
+                <viewController id="gn9-R7-eiC" customClass="EditViewController" customModule="EulerityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d7J-RU-oZr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ItU-5p-NGb">
+                                <rect key="frame" x="10" y="109" width="394" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="SNe-L5-tc3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="9JE-oj-vZA" userLabel="Intensity Stack View">
+                                <rect key="frame" x="10" y="378" width="394" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sao-l3-KYV">
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.1000000000000001" minValue="0.0" maxValue="4.0999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="jIY-fC-jUc">
+                                        <rect key="frame" x="66" y="0.0" width="330" height="31"/>
+                                        <connections>
+                                            <action selector="intensityChange:" destination="gn9-R7-eiC" eventType="valueChanged" id="cbx-bY-Skt"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJs-dR-GQb" userLabel="Choose Filter">
+                                <rect key="frame" x="20" y="822" width="142" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Choose Filter"/>
+                                <connections>
+                                    <action selector="filterButton:" destination="gn9-R7-eiC" eventType="touchUpInside" id="258-5q-JWB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="708-OQ-8fp"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="708-OQ-8fp" firstAttribute="trailing" secondItem="ItU-5p-NGb" secondAttribute="trailing" constant="10" id="9fZ-wg-iUt"/>
+                            <constraint firstItem="708-OQ-8fp" firstAttribute="bottom" secondItem="qJs-dR-GQb" secondAttribute="bottom" id="I9e-9P-2fr"/>
+                            <constraint firstItem="9JE-oj-vZA" firstAttribute="trailing" secondItem="708-OQ-8fp" secondAttribute="trailing" constant="-10" id="LWx-9d-ib5"/>
+                            <constraint firstItem="ItU-5p-NGb" firstAttribute="leading" secondItem="708-OQ-8fp" secondAttribute="leading" constant="10" id="Oym-rY-ope"/>
+                            <constraint firstItem="9JE-oj-vZA" firstAttribute="leading" secondItem="ItU-5p-NGb" secondAttribute="leading" id="RYW-eb-Rai"/>
+                            <constraint firstItem="qJs-dR-GQb" firstAttribute="leading" secondItem="708-OQ-8fp" secondAttribute="leading" constant="20" id="UQ1-Fz-mBE"/>
+                            <constraint firstItem="ItU-5p-NGb" firstAttribute="top" secondItem="708-OQ-8fp" secondAttribute="top" constant="21" id="bTr-ZA-isd"/>
+                            <constraint firstItem="708-OQ-8fp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qJs-dR-GQb" secondAttribute="trailing" symbolic="YES" id="rsx-2n-p6O"/>
+                            <constraint firstItem="9JE-oj-vZA" firstAttribute="top" secondItem="ItU-5p-NGb" secondAttribute="bottom" constant="10" id="x3V-Oa-Srq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BD1-jo-Ipi"/>
+                    <connections>
+                        <outlet property="imageView" destination="ItU-5p-NGb" id="lhC-LR-Y9u"/>
+                        <outlet property="intensity" destination="jIY-fC-jUc" id="3Jy-Sx-JUz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9c-L4-2W8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2247.826086956522" y="48.883928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cPu-6d-zBc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YPb-hp-QjR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K7Y-Uj-rwc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="J0l-Kj-zMV" kind="relationship" relationship="rootViewController" id="CUm-W0-7UB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qg3-9P-eud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="475.36231884057975" y="48.883928571428569"/>
+        </scene>
+    </scenes>
+</document>

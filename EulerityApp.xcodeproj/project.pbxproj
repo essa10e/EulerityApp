@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AF3C7C82648971600144D07 /* UivewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3C7C72648971600144D07 /* UivewExtension.swift */; };
+		8AFC093A2645B4B000D5A581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC09392645B4B000D5A581 /* AppDelegate.swift */; };
+		8AFC093C2645B4B000D5A581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC093B2645B4B000D5A581 /* SceneDelegate.swift */; };
+		8AFC093E2645B4B000D5A581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC093D2645B4B000D5A581 /* ViewController.swift */; };
+		8AFC09412645B4B000D5A581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC093F2645B4B000D5A581 /* Main.storyboard */; };
+		8AFC09432645B4B100D5A581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC09422645B4B100D5A581 /* Assets.xcassets */; };
+		8AFC09462645B4B100D5A581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC09442645B4B100D5A581 /* LaunchScreen.storyboard */; };
+		8AFC09512645B4B100D5A581 /* EulerityAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC09502645B4B100D5A581 /* EulerityAppTests.swift */; };
+		8AFC095C2645B4B100D5A581 /* EulerityAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC095B2645B4B100D5A581 /* EulerityAppUITests.swift */; };
+		8AFC096B2645B56700D5A581 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC096A2645B56700D5A581 /* Image.swift */; };
+		8AFC09712645B8D800D5A581 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC09702645B8D800D5A581 /* ErrorMessage.swift */; };
+		8AFC09732645BA1D00D5A581 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC09722645BA1D00D5A581 /* NetworkManager.swift */; };
+		8AFC09752645CB3C00D5A581 /* ImageCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC09742645CB3C00D5A581 /* ImageCellCollectionViewCell.swift */; };
+		8AFC09782645D85300D5A581 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8AFC09772645D85300D5A581 /* Kingfisher */; };
+		8AFC097B2645F12600D5A581 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC097A2645F12600D5A581 /* EditViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AFC094D2645B4B100D5A581 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AFC092E2645B4B000D5A581 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AFC09352645B4B000D5A581;
+			remoteInfo = EulerityApp;
+		};
+		8AFC09582645B4B100D5A581 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AFC092E2645B4B000D5A581 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AFC09352645B4B000D5A581;
+			remoteInfo = EulerityApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8AF3C7C72648971600144D07 /* UivewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UivewExtension.swift; sourceTree = "<group>"; };
+		8AFC09362645B4B000D5A581 /* EulerityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EulerityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFC09392645B4B000D5A581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AFC093B2645B4B000D5A581 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8AFC093D2645B4B000D5A581 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AFC09402645B4B000D5A581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AFC09422645B4B100D5A581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AFC09452645B4B100D5A581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AFC09472645B4B100D5A581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFC094C2645B4B100D5A581 /* EulerityAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EulerityAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFC09502645B4B100D5A581 /* EulerityAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulerityAppTests.swift; sourceTree = "<group>"; };
+		8AFC09522645B4B100D5A581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFC09572645B4B100D5A581 /* EulerityAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EulerityAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFC095B2645B4B100D5A581 /* EulerityAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulerityAppUITests.swift; sourceTree = "<group>"; };
+		8AFC095D2645B4B100D5A581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFC096A2645B56700D5A581 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		8AFC09702645B8D800D5A581 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		8AFC09722645BA1D00D5A581 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8AFC09742645CB3C00D5A581 /* ImageCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		8AFC097A2645F12600D5A581 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AFC09332645B4B000D5A581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFC09782645D85300D5A581 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC09492645B4B100D5A581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC09542645B4B100D5A581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AF3C7C6264896FA00144D07 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8AF3C7C72648971600144D07 /* UivewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8AFC092D2645B4B000D5A581 = {
+			isa = PBXGroup;
+			children = (
+				8AFC09382645B4B000D5A581 /* EulerityApp */,
+				8AFC094F2645B4B100D5A581 /* EulerityAppTests */,
+				8AFC095A2645B4B100D5A581 /* EulerityAppUITests */,
+				8AFC09372645B4B000D5A581 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AFC09372645B4B000D5A581 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC09362645B4B000D5A581 /* EulerityApp.app */,
+				8AFC094C2645B4B100D5A581 /* EulerityAppTests.xctest */,
+				8AFC09572645B4B100D5A581 /* EulerityAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AFC09382645B4B000D5A581 /* EulerityApp */ = {
+			isa = PBXGroup;
+			children = (
+				8AF3C7C6264896FA00144D07 /* Extensions */,
+				8AFC09792645F0B200D5A581 /* Controllers */,
+				8AFC096F2645B8AC00D5A581 /* Utilities */,
+				8AFC096C2645B6CE00D5A581 /* Network */,
+				8AFC09692645B54B00D5A581 /* Model */,
+				8AFC09392645B4B000D5A581 /* AppDelegate.swift */,
+				8AFC093B2645B4B000D5A581 /* SceneDelegate.swift */,
+				8AFC093D2645B4B000D5A581 /* ViewController.swift */,
+				8AFC097A2645F12600D5A581 /* EditViewController.swift */,
+				8AFC09742645CB3C00D5A581 /* ImageCellCollectionViewCell.swift */,
+				8AFC093F2645B4B000D5A581 /* Main.storyboard */,
+				8AFC09422645B4B100D5A581 /* Assets.xcassets */,
+				8AFC09442645B4B100D5A581 /* LaunchScreen.storyboard */,
+				8AFC09472645B4B100D5A581 /* Info.plist */,
+			);
+			path = EulerityApp;
+			sourceTree = "<group>";
+		};
+		8AFC094F2645B4B100D5A581 /* EulerityAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC09502645B4B100D5A581 /* EulerityAppTests.swift */,
+				8AFC09522645B4B100D5A581 /* Info.plist */,
+			);
+			path = EulerityAppTests;
+			sourceTree = "<group>";
+		};
+		8AFC095A2645B4B100D5A581 /* EulerityAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC095B2645B4B100D5A581 /* EulerityAppUITests.swift */,
+				8AFC095D2645B4B100D5A581 /* Info.plist */,
+			);
+			path = EulerityAppUITests;
+			sourceTree = "<group>";
+		};
+		8AFC09692645B54B00D5A581 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC096A2645B56700D5A581 /* Image.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8AFC096C2645B6CE00D5A581 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC09722645BA1D00D5A581 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8AFC096F2645B8AC00D5A581 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC09702645B8D800D5A581 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8AFC09792645F0B200D5A581 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AFC09352645B4B000D5A581 /* EulerityApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFC09602645B4B100D5A581 /* Build configuration list for PBXNativeTarget "EulerityApp" */;
+			buildPhases = (
+				8AFC09322645B4B000D5A581 /* Sources */,
+				8AFC09332645B4B000D5A581 /* Frameworks */,
+				8AFC09342645B4B000D5A581 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EulerityApp;
+			packageProductDependencies = (
+				8AFC09772645D85300D5A581 /* Kingfisher */,
+			);
+			productName = EulerityApp;
+			productReference = 8AFC09362645B4B000D5A581 /* EulerityApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AFC094B2645B4B100D5A581 /* EulerityAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFC09632645B4B100D5A581 /* Build configuration list for PBXNativeTarget "EulerityAppTests" */;
+			buildPhases = (
+				8AFC09482645B4B100D5A581 /* Sources */,
+				8AFC09492645B4B100D5A581 /* Frameworks */,
+				8AFC094A2645B4B100D5A581 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AFC094E2645B4B100D5A581 /* PBXTargetDependency */,
+			);
+			name = EulerityAppTests;
+			productName = EulerityAppTests;
+			productReference = 8AFC094C2645B4B100D5A581 /* EulerityAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8AFC09562645B4B100D5A581 /* EulerityAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AFC09662645B4B100D5A581 /* Build configuration list for PBXNativeTarget "EulerityAppUITests" */;
+			buildPhases = (
+				8AFC09532645B4B100D5A581 /* Sources */,
+				8AFC09542645B4B100D5A581 /* Frameworks */,
+				8AFC09552645B4B100D5A581 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AFC09592645B4B100D5A581 /* PBXTargetDependency */,
+			);
+			name = EulerityAppUITests;
+			productName = EulerityAppUITests;
+			productReference = 8AFC09572645B4B100D5A581 /* EulerityAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AFC092E2645B4B000D5A581 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8AFC09352645B4B000D5A581 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					8AFC094B2645B4B100D5A581 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 8AFC09352645B4B000D5A581;
+					};
+					8AFC09562645B4B100D5A581 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 8AFC09352645B4B000D5A581;
+					};
+				};
+			};
+			buildConfigurationList = 8AFC09312645B4B000D5A581 /* Build configuration list for PBXProject "EulerityApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AFC092D2645B4B000D5A581;
+			packageReferences = (
+				8AFC09762645D85300D5A581 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 8AFC09372645B4B000D5A581 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AFC09352645B4B000D5A581 /* EulerityApp */,
+				8AFC094B2645B4B100D5A581 /* EulerityAppTests */,
+				8AFC09562645B4B100D5A581 /* EulerityAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AFC09342645B4B000D5A581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFC09462645B4B100D5A581 /* LaunchScreen.storyboard in Resources */,
+				8AFC09432645B4B100D5A581 /* Assets.xcassets in Resources */,
+				8AFC09412645B4B000D5A581 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC094A2645B4B100D5A581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC09552645B4B100D5A581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AFC09322645B4B000D5A581 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFC093E2645B4B000D5A581 /* ViewController.swift in Sources */,
+				8AFC093A2645B4B000D5A581 /* AppDelegate.swift in Sources */,
+				8AFC09752645CB3C00D5A581 /* ImageCellCollectionViewCell.swift in Sources */,
+				8AFC096B2645B56700D5A581 /* Image.swift in Sources */,
+				8AFC09732645BA1D00D5A581 /* NetworkManager.swift in Sources */,
+				8AFC093C2645B4B000D5A581 /* SceneDelegate.swift in Sources */,
+				8AFC09712645B8D800D5A581 /* ErrorMessage.swift in Sources */,
+				8AFC097B2645F12600D5A581 /* EditViewController.swift in Sources */,
+				8AF3C7C82648971600144D07 /* UivewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC09482645B4B100D5A581 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFC09512645B4B100D5A581 /* EulerityAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AFC09532645B4B100D5A581 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFC095C2645B4B100D5A581 /* EulerityAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AFC094E2645B4B100D5A581 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AFC09352645B4B000D5A581 /* EulerityApp */;
+			targetProxy = 8AFC094D2645B4B100D5A581 /* PBXContainerItemProxy */;
+		};
+		8AFC09592645B4B100D5A581 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AFC09352645B4B000D5A581 /* EulerityApp */;
+			targetProxy = 8AFC09582645B4B100D5A581 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8AFC093F2645B4B000D5A581 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AFC09402645B4B000D5A581 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AFC09442645B4B100D5A581 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AFC09452645B4B100D5A581 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AFC095E2645B4B100D5A581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AFC095F2645B4B100D5A581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AFC09612645B4B100D5A581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EulerityApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.essa.EulerityApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8AFC09622645B4B100D5A581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EulerityApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.essa.EulerityApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8AFC09642645B4B100D5A581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EulerityAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.essa.EulerityAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EulerityApp.app/EulerityApp";
+			};
+			name = Debug;
+		};
+		8AFC09652645B4B100D5A581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EulerityAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.essa.EulerityAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EulerityApp.app/EulerityApp";
+			};
+			name = Release;
+		};
+		8AFC09672645B4B100D5A581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EulerityAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.essa.EulerityAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EulerityApp;
+			};
+			name = Debug;
+		};
+		8AFC09682645B4B100D5A581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EulerityAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.essa.EulerityAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EulerityApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AFC09312645B4B000D5A581 /* Build configuration list for PBXProject "EulerityApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFC095E2645B4B100D5A581 /* Debug */,
+				8AFC095F2645B4B100D5A581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFC09602645B4B100D5A581 /* Build configuration list for PBXNativeTarget "EulerityApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFC09612645B4B100D5A581 /* Debug */,
+				8AFC09622645B4B100D5A581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFC09632645B4B100D5A581 /* Build configuration list for PBXNativeTarget "EulerityAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFC09642645B4B100D5A581 /* Debug */,
+				8AFC09652645B4B100D5A581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AFC09662645B4B100D5A581 /* Build configuration list for PBXNativeTarget "EulerityAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AFC09672645B4B100D5A581 /* Debug */,
+				8AFC09682645B4B100D5A581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8AFC09762645D85300D5A581 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8AFC09772645D85300D5A581 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AFC09762645D85300D5A581 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8AFC092E2645B4B000D5A581 /* Project object */;
+}
