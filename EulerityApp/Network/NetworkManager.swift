@@ -6,10 +6,6 @@
 //
 
 import Foundation
-import UIKit
-
-//typealias Parameters = [String: String]
-
 
 class NetworkManager {
     
@@ -18,35 +14,6 @@ class NetworkManager {
     private let baseURL = "https://eulerity-hackathon.appspot.com"
     private let getPathURL = "/image"
     private let uploadPathURL = "/upload"
-    
-//    func getRequest() {
-//        guard let url = URL(string: "https://eulerity-hackathon.appspot.com/upload") else { return }
-//        var request = URLRequest(url: url)
-//
-//        let boundary = "Boundary-\(NSUUID().uuidString)"
-//
-//        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
-//
-//        let dataBody = createDataBody(withParameters: nil, media: nil, boundary: boundary)
-//        request.httpBody = dataBody
-//
-//        let session = URLSession.shared
-//        session.dataTask(with: request) {(data, response, error) in
-//            if let response = response {
-//                print(response)
-//            }
-//
-//            if let data = data {
-//                do {
-//                    let json = try JSONSerialization.jsonObject(with: data, options: [])
-//                    print(json)
-//                } catch {
-//                    print(error)
-//                }
-//            }
-//        }.resume()
-//
-//    }
     
     func fetchUploadURL(completed: @escaping (Result<ImageResponse, ErrorMessage>) -> Void) {
         let endpoint = baseURL + uploadPathURL
@@ -116,11 +83,5 @@ class NetworkManager {
             }
         }
         dataTask.resume()
-    }
-}
-
-extension Data {
-    mutating func append(_ string: String) {
-        if let data = string.data(using: .utf8){ append(data) }
     }
 }

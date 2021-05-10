@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8AF3C7C82648971600144D07 /* UivewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3C7C72648971600144D07 /* UivewExtension.swift */; };
+		8AF8F6AF26499D1B00FF586E /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8F6AE26499D1B00FF586E /* DataExtension.swift */; };
+		8AF8F6B12649A94100FF586E /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8F6B02649A94100FF586E /* ImageResponse.swift */; };
 		8AFC093A2645B4B000D5A581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC09392645B4B000D5A581 /* AppDelegate.swift */; };
 		8AFC093C2645B4B000D5A581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC093B2645B4B000D5A581 /* SceneDelegate.swift */; };
 		8AFC093E2645B4B000D5A581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC093D2645B4B000D5A581 /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		8AF3C7C72648971600144D07 /* UivewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UivewExtension.swift; sourceTree = "<group>"; };
+		8AF8F6AE26499D1B00FF586E /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		8AF8F6B02649A94100FF586E /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
 		8AFC09362645B4B000D5A581 /* EulerityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EulerityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFC09392645B4B000D5A581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AFC093B2645B4B000D5A581 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				8AF3C7C72648971600144D07 /* UivewExtension.swift */,
+				8AF8F6AE26499D1B00FF586E /* DataExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				8AFC096A2645B56700D5A581 /* Image.swift */,
+				8AF8F6B02649A94100FF586E /* ImageResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,11 +334,13 @@
 				8AFC093A2645B4B000D5A581 /* AppDelegate.swift in Sources */,
 				8AFC09752645CB3C00D5A581 /* ImageCellCollectionViewCell.swift in Sources */,
 				8AFC096B2645B56700D5A581 /* Image.swift in Sources */,
+				8AF8F6B12649A94100FF586E /* ImageResponse.swift in Sources */,
 				8AFC09732645BA1D00D5A581 /* NetworkManager.swift in Sources */,
 				8AFC093C2645B4B000D5A581 /* SceneDelegate.swift in Sources */,
 				8AFC09712645B8D800D5A581 /* ErrorMessage.swift in Sources */,
 				8AFC097B2645F12600D5A581 /* EditViewController.swift in Sources */,
 				8AF3C7C82648971600144D07 /* UivewExtension.swift in Sources */,
+				8AF8F6AF26499D1B00FF586E /* DataExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

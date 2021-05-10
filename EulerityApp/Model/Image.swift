@@ -12,17 +12,14 @@ struct Image: Codable {
     let created, updated : String
 }
 
+
+/* it has to be deleted later if not going to be used anymore. **/
 struct ImageRequest: Encodable {
     let attachment: String
     let fileName: String
 }
 
-struct ImageResponse: Decodable {
-    let url: String
-}
-
 struct Media {
-//    let url: String
     let key: String
     let filename: String
     let data: Data
