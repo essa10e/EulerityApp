@@ -9,6 +9,8 @@ import CoreImage
 import UIKit
 import Kingfisher
 
+typealias Parameters = [String: String]
+
 class EditViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
@@ -138,43 +140,51 @@ class EditViewController: UIViewController {
                 }
             }
         }
-        
-//        if self.imageView != nil {
-//            postRequest(postUrl: uploadeUrlPath)
-//        }
     }
     
     func postRequest(postUrl: String) {
-
-        let parameters = ["name" : "TestFile",
-                          "description" : "EulerityApp Test"]
-
-        guard let mediaImage = Media(withImage: imageView.image!, forKey: "image") else {
+        let urlPath = postUrl
+        guard let endpoint = URL(string: urlPath) else {
+            print("Error creating endpoint")
             return
         }
-
-
-//        guard let url = URL(string: "https://eulerity-hackathon.appspot.com/upload") else { return }
-
-        guard let url = URL(string: postUrl) else { return }
-
-        var request = URLRequest(url: url)
+        
+        var request = URLRequest(url: endpoint)
         request.httpMethod = "POST"
+        
 
         let boundary = "Boundary-\(NSUUID().uuidString)"
-
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
-        request.addValue("appid", forHTTPHeaderField: "isa86@protonmail.com")
-
-        let dataBody = createDataBody(withParameters: parameters, media: mediaImage, boundary: boundary)
-        request.httpBody = dataBody
-
-        let session = URLSession.shared
-        session.dataTask(with: request) {(data, response, error) in
+        let mimeType = "image/jpg"
+        
+        let lineBreak = "\r\n"
+        var body = Data()
+        var params: Parameters?
+        params = ["appid": "isa86@protonmail.com", "session":"Testing"]
+        
+        if let parameters = params {
+            for (key, value) in parameters {
+                body.append("--\(boundary + lineBreak)")
+                body.append("Content-Disposition: form-data; name=\"\(key)\"\(lineBreak + lineBreak)")
+                body.append("\(value + lineBreak)")
+            }
+        }
+        
+        let imageData = imageView.image?.jpegData(compressionQuality: 1.0)
+        let filename = "image1"
+        
+        body.append("--\(boundary + lineBreak)")
+        body.append("Content-Disposition: form-data; name=\"image\"; filename=\"\(filename)\"\(lineBreak)")
+        body.append("Content-Type: \(mimeType)\r\n\r\n")
+        body.append(imageData!)
+        body.append("\(lineBreak)")
+        body.append("--\(boundary)--\(lineBreak)")
+        
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let response = response {
                 print(response)
             }
-
+            
             if let data = data {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
@@ -184,34 +194,6 @@ class EditViewController: UIViewController {
                 }
             }
         }.resume()
-
-    }
-
-    func createDataBody(withParameters params: Parameters?, media: Media?, boundary: String) -> Data {
-        let lineBreak = "\r\n"
-        var body = Data()
-
-        if let parameters = params {
-            for (key, value) in parameters {
-                body.append("--\(boundary + lineBreak)")
-                body.append("Content-Disposition: form-data; name=\"\(key)\"\(lineBreak + lineBreak)")
-                body.append("\(value + lineBreak)")
-            }
-        }
-
-        if let image = media {
-           // for image in media {
-                body.append("--\(boundary + lineBreak)")
-                body.append("Content-Disposition: form-data; name=\"\(image.key)\"; filename=\"\(image.filename)\"\(lineBreak)")
-                body.append("Content-Type: \(image.mimeType + lineBreak + lineBreak)")
-                body.append(image.data)
-                body.append(lineBreak)
-            //}
-        }
-
-        body.append("--\(boundary)--\(lineBreak)")
-
-        return body
     }
 }
 

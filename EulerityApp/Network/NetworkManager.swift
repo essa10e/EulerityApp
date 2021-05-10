@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-typealias Parameters = [String: String]
+//typealias Parameters = [String: String]
 
 
 class NetworkManager {
