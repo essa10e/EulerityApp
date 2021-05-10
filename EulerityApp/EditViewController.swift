@@ -14,7 +14,6 @@ typealias Parameters = [String: String]
 class EditViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var intensity: UISlider!
     
     var selectedImage: String?
@@ -117,7 +116,6 @@ class EditViewController: UIViewController {
 
         let originImage = CIImage(image: image)
         
-        // sometimes crashes: found nil while implicity unwrapping an optional value.
         currentFilter.setValue(originImage, forKey: kCIInputImageKey)
         applyFilter()
     }
@@ -152,7 +150,6 @@ class EditViewController: UIViewController {
         var request = URLRequest(url: endpoint)
         request.httpMethod = "POST"
         
-
         let boundary = "Boundary-\(NSUUID().uuidString)"
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         let mimeType = "image/jpg"
@@ -170,7 +167,7 @@ class EditViewController: UIViewController {
             }
         }
         
-        let imageData = imageView.image?.jpegData(compressionQuality: 1.0)
+        let imageData = currentImage?.jpegData(compressionQuality: 1.0)
         let filename = "image1"
         
         body.append("--\(boundary + lineBreak)")
@@ -180,6 +177,8 @@ class EditViewController: UIViewController {
         body.append("\(lineBreak)")
         body.append("--\(boundary)--\(lineBreak)")
         
+        request.httpBody = body as Data
+
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let response = response {
                 print(response)
@@ -196,5 +195,3 @@ class EditViewController: UIViewController {
         }.resume()
     }
 }
-
-
